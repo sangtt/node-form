@@ -13,14 +13,18 @@
   },
   "scripts": {
     "test": "gulp test",
-    "lint": "gulp lint"
+    "lint": "gulp lint",
+    "coveralls": "gulp coveralls"
   },
   "dependencies": {
     "validator": "^4.2.1"
   },
   "devDependencies": {
+    "del": "^2.0.2",
     "gulp": "^3.9.0",
+    "gulp-coveralls": "^0.1.4",
     "gulp-eslint": "^1.0.0",
+    "gulp-istanbul": "^0.10.2",
     "gulp-mocha": "^2.1.3"
   },
   "license": "MIT",
