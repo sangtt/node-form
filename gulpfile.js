@@ -37,7 +37,7 @@ gulp.task('test', ['pre-test'], function() {
         .pipe(mocha({reporter: 'spec'}))
         .pipe(istanbul.writeReports())
         .pipe(istanbul.enforceThresholds({thresholds: {
-            global: 50
+            global: 25
         }}));
 });
 

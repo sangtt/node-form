@@ -17,6 +17,7 @@
     "coveralls": "gulp coveralls"
   },
   "dependencies": {
+    "async": "^1.5.0",
     "validator": "^4.2.1"
   },
   "devDependencies": {
