@@ -1,17 +1,20 @@
 [![Build Status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 
-# node-form
+# simple-form
+```sh
+$ version 1.0.0
+```
 
 Form processor for filter and validation form data. This base on [form](https://github.com/baryshev/form).
 I develop this module because the idea of this package is very good, but the current module didn't work.
 
 ## Installation
 
-Install [node-form](https://travis-ci.org/sangtt/node-form) then run the following.
+Install [simple-form](https://travis-ci.org/sangtt/simple-form) then run the following.
 
 ```shell
-$ npm install node-form --save-dev
+$ npm install simple-form --save-dev
 ```
 
 ## Example
@@ -19,7 +22,7 @@ $ npm install node-form --save-dev
 Processing an example form:
 
 ```javascript
-var form = require('node-form');
+var form = require('simple-form');
 
 var elements = {
     name: [
@@ -47,7 +50,7 @@ data: { name: 'tester' }
 You can define your own validator:
 
 ```javascript
-var form = require('node-form');
+var form = require('simple-form');
 
 form.extend('isNotEmpty', function(str) {
     return (str.length > 0) ? true : false;
@@ -90,7 +93,7 @@ data: { name: 'tester', email: '' }
 You can use your own validator:
 
 ```javascript
-var form = require('node-form');
+var form = require('simple-form');
 
 function customNameValidator(data, name, callback) {
     setTimeout(function(){
@@ -127,7 +130,7 @@ data: { name: 'tester' }
 
 
 
-[travis-image]:    https://travis-ci.org/sangtt/node-form.svg?style=flat-square
-[coveralls-image]: https://img.shields.io/coveralls/sangtt/node-form/master.svg?style=flat-square
-[travis-url]:      https://travis-ci.org/sangtt/node-form
-[coveralls-url]:   https://coveralls.io/github/sangtt/node-form?branch=master
+[travis-image]:    https://travis-ci.org/sangtt/simple-form.svg?style=flat-square
+[coveralls-image]: https://img.shields.io/coveralls/sangtt/simple-form/master.svg?style=flat-square
+[travis-url]:      https://travis-ci.org/sangtt/simple-form
+[coveralls-url]:   https://coveralls.io/github/sangtt/simple-form?branch=master
