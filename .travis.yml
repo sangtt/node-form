@@ -4,7 +4,7 @@ node_js:
 
 env:
   global:
-    - COVERALLS_REPO_TOKEN: 250br9FixpeeuQ6Q27yk4b2HcnS8qHodX
+    - COVERALLS_REPO_TOKEN: CfYMxTZb5uTkzUVFZUIxTvdDk5FgTrNTQ
 
 cache:
   directories:
